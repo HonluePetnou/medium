@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div className="w-screen h-screen bg-yellow-50 grid grid-rows-10 overflow-hidden">
       {/* header */}
-      <div className="flex justify-between items-center py-4 px-8 md:px-16 row-span-1">
+      <div className="flex justify-between items-center pt-4 px-8 md:px-16 row-span-1">
         <div>
           <Image
             src="/medium.svg" 
@@ -15,14 +15,14 @@ export default function Home() {
             priority
           />
         </div>
-        <div className="flex justify-end items-center gap-4">
+        <div className="flex justify-end items-center gap-x-4">
           <nav className="flex text-base gap-4">
-            <div className="hidden md:flex gap-4">
+            <div className="hidden md:flex gap-x-4">
               <a href="#">Our story</a>
               <a href="#">Membership</a>
               <a href="#">Write</a>
             </div>
-            <div className="hidden sm:flex gap-4">
+            <div className="hidden sm:flex">
               <a href="#" className="sm:inline">Sign in</a>
             </div>
           </nav>
@@ -33,7 +33,7 @@ export default function Home() {
       {/* body */}
       <div className="flex row-span-9 justify-center items-center md:pl-32">
         {/* left */}
-        <div className="flex flex-col place-items-start gap-4 p-4 md:w-2/3">
+        <div className="flex flex-col place-items-start gap-4 p-4 md:w-3/5">
           <div> 
             <h1 className="text-7xl sm:text-8xl font-bold text-left">Human stories & ideas</h1>
           </div>
@@ -45,12 +45,12 @@ export default function Home() {
           </div>
         </div>
         {/* right */}
-        <div className="relative hidden md:block w-1/3 h-full">
+        <div className="relative hidden md:block w-2/5 h-full">
           <Image
             src="/side-hero.webp"
             alt="Logo"
             layout="fill"
-            objectFit="cover" // Ensures it covers the container
+            objectFit="contain" // Ensures it covers the container
             className="rounded-lg"
           />
         </div>
