@@ -10,7 +10,7 @@ export default function Login() {
   return (
     <>
      <Modal isOpen={true} onClose={() => {}}>
-       <div>Login into this website</div>                      
+       <div>Login into this app through google</div>                      
      </Modal>
     </>
   )
